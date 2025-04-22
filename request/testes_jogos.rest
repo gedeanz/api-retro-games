@@ -1,0 +1,28 @@
+### Listar todos os jogos
+GET http://localhost:3000/jogos
+
+### Buscar jogo por ID
+GET http://localhost:3000/jogos/3
+
+### Criar novo jogo
+POST http://localhost:3000/jogos
+Content-Type: application/json
+
+{
+  "nome": "Zelda",
+  "plataforma": "Super Nintendo",
+  "ano_lancamento": 1980
+}
+
+### Atualizar jogo
+PUT http://localhost:3000/jogos/1
+Content-Type: application/json
+
+{
+  "nome": "Mario Kart",
+  "plataforma": "Super Nintendo",
+  "ano_lancamento": 1992
+}
+
+### Deletar jogo
+DELETE http://localhost:3000/jogos/1

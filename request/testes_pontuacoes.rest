@@ -1,0 +1,17 @@
+### Registrar nova pontuação (válida)
+POST http://localhost:3000/pontuacoes
+Content-Type: application/json
+
+{
+  "id_jogo": 5,
+  "id_jogador": 18,
+  "pontuacao": 6500
+}
+
+### Buscar ranking pelo ID do jogo
+GET http://localhost:3000/pontuacoes/ranking/2
+Content-Type: application/json
+
+### Buscar os 3 jogos mais populares
+GET http://localhost:3000/pontuacoes/jogos/populares
+Content-Type: application/json

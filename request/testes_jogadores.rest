@@ -1,0 +1,21 @@
+### Listar todos os jogadores
+GET http://localhost:3000/jogadores
+Content-Type: application/json
+
+### Cadastrar novo jogador
+POST http://localhost:3000/jogadores
+Content-Type: application/json
+
+{
+  "nome": "Gabriel",
+  "nickname": "gabi"
+}
+
+### Testar jogador com nickname duplicado
+POST http://localhost:3000/jogadores
+Content-Type: application/json
+
+{
+  "nome": "Igor Pinheiro",
+  "nickname": "igopin"
+}
