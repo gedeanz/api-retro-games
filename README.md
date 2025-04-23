@@ -1,12 +1,12 @@
 
-# 🎮 API Retro Games
+# API Retro Games
 
 Projeto prático da disciplina **Desenvolvimento de Serviços Web** — Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas.  
 A API permite o gerenciamento de jogos retrô, jogadores e suas pontuações, com ranking e jogos populares.
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 - `server.js` — Arquivo principal da aplicação
 - `config/` — Conexão com banco de dados (MySQL)
@@ -17,7 +17,7 @@ A API permite o gerenciamento de jogos retrô, jogadores e suas pontuações, co
 
 ---
 
-## 🚀 Como Executar Localmente
+## Como Executar Localmente
 
 ### 1. Clonar o Repositório
 ```bash
@@ -25,9 +25,9 @@ git clone https://github.com/seu-usuario/seu-repo.git
 cd seu-repo
 ```
 
-### 2. Iniciar o Projeto
+### 2. Instalar Dependências
 
-Depois que estiver na pasta do projeto, instalar as dependências com base no package.json:
+Depois que estiver na pasta do projeto, instalar as dependências com base no `package.json`:
 
 ```bash
 npm install
@@ -42,12 +42,12 @@ npm run dev
 
 ### 3. Banco de Dados
 
-Criar o banco `retro_games` e suas tabelas executando o script SQL fornecido no arquivo `init.sql`.
+Crie o banco `retro_games` e suas tabelas executando o script SQL fornecido no arquivo `init.sql`.
 
-Atualizar o arquivo `config/db.js` com os dados corretos do seu MySQL local:
+Atualize o arquivo `config/db.js` com os dados corretos do seu MySQL local:
 
-# Exemplo padrão do IFRS BG:
 ```js
+// Exemplo padrão do IFRS BG:
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
@@ -58,7 +58,33 @@ const db = mysql.createConnection({
 
 ---
 
-## Funcionalidades da API
+## Pré-requisitos e Ferramentas
+
+### MySQL Workbench
+
+Você pode instalar o [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) para:
+- Criar o banco de dados
+- Executar o script SQL `init.sql`
+- Visualizar e manipular os dados facilmente
+
+> Também é possível usar DBeaver, phpMyAdmin ou terminal MySQL.
+
+---
+
+### Extensões do VS Code
+
+Para facilitar os testes com os arquivos `.rest`, instale a extensão:
+
+ **REST Client**  
+🔗 [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+
+Com ela instalada, você pode:
+- Abrir qualquer arquivo `.rest`
+- Clicar em "Send Request" para testar a API diretamente
+
+---
+
+## uncionalidades da API
 
 ### Jogos
 - `GET /jogos` — Listar todos os jogos
@@ -78,13 +104,13 @@ const db = mysql.createConnection({
 
 ---
 
-### Testes
+## Testes
 
 O projeto inclui arquivos `.rest` dentro da pasta `/request`, prontos para serem usados com a extensão **REST Client** do VS Code.
 
 ---
 
-## 👨‍🏫 Informações da Disciplina
+## Informações da Disciplina
 
 **Disciplina:** Desenvolvimento de Serviços Web  
 **Professor:** Dr. Maurício Covolan Rosito  
