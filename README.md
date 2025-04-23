@@ -84,7 +84,7 @@ Com ela instalada, você pode:
 
 ---
 
-## uncionalidades da API
+## Funcionalidades da API
 
 ### Jogos
 - `GET /jogos` — Listar todos os jogos
