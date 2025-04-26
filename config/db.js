@@ -3,8 +3,8 @@ const mysql = require("mysql2");
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "",         // coloque sua senha se houver
-  database: "retro_games" // nome do seu banco
+  password: "loks03",        
+  database: "retro_games" 
 });
 
 db.connect((err) => {

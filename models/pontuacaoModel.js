@@ -17,7 +17,8 @@ exports.validarIds = (id_jogo, id_jogador, callback) => {
   });
 };
 
-exports.inserirPontuacao = ({ id_jogo, id_jogador, pontuacao }, callback) => {
+exports.inserirPontuacao = (pontuacaoJogo, callback) => {
+  const { id_jogo, id_jogador, pontuacao } = pontuacaoJogo
   db.query(
     "INSERT INTO pontuacoes (id_jogo, id_jogador, pontuacao) VALUES (?, ?, ?)",
     [id_jogo, id_jogador, pontuacao],

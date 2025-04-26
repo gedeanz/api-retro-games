@@ -62,21 +62,16 @@ const db = mysql.createConnection({
 
 ### MySQL Workbench
 
-Você pode instalar o [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) para:
+É preciso instalar o **MySQL Workbench** para:
 - Criar o banco de dados
 - Executar o script SQL `init.sql`
 - Visualizar e manipular os dados facilmente
-
-> Também é possível usar DBeaver, phpMyAdmin ou terminal MySQL.
 
 ---
 
 ### Extensões do VS Code
 
-Para facilitar os testes com os arquivos `.rest`, instale a extensão:
-
- **REST Client**  
-🔗 [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+Para facilitar os testes com os arquivos `.rest`, instale a extensão **REST Client** :
 
 Com ela instalada, você pode:
 - Abrir qualquer arquivo `.rest`
@@ -107,6 +102,8 @@ Com ela instalada, você pode:
 ## Testes
 
 O projeto inclui arquivos `.rest` dentro da pasta `/request`, prontos para serem usados com a extensão **REST Client** do VS Code.
+
+Para facilitar nos testes de rankings, tem um comando sql padrão pronto no arquivo `init.sql`, para criar 10 jogadores, 3 jogos e várias pontuações por jogo.
 
 ---
 

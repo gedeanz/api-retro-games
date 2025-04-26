@@ -2,27 +2,27 @@
 GET http://localhost:3000/jogos
 
 ### Buscar jogo por ID
-GET http://localhost:3000/jogos/3
+GET http://localhost:3000/jogos/5
 
 ### Criar novo jogo
 POST http://localhost:3000/jogos
 Content-Type: application/json
 
 {
-  "nome": "Zelda",
+  "nome": "Teste",
   "plataforma": "Super Nintendo",
-  "ano_lancamento": 1980
+  "ano_lancamento": 1990
 }
 
-### Atualizar jogo
-PUT http://localhost:3000/jogos/1
+### Atualizar jogo existente
+PUT http://localhost:3000/jogos/4
 Content-Type: application/json
 
 {
-  "nome": "Mario Kart",
-  "plataforma": "Super Nintendo",
-  "ano_lancamento": 1992
+  "nome": "Zelda",
+  "plataforma": "Atari",
+  "ano_lancamento": 1996
 }
 
 ### Deletar jogo
-DELETE http://localhost:3000/jogos/1
+DELETE http://localhost:3000/jogos/7

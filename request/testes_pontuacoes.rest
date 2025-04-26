@@ -3,13 +3,13 @@ POST http://localhost:3000/pontuacoes
 Content-Type: application/json
 
 {
-  "id_jogo": 5,
-  "id_jogador": 18,
-  "pontuacao": 6500
+  "id_jogo": 1,
+  "id_jogador": 14,
+  "pontuacao": 150000
 }
 
 ### Buscar ranking pelo ID do jogo
-GET http://localhost:3000/pontuacoes/ranking/2
+GET http://localhost:3000/pontuacoes/ranking/1
 Content-Type: application/json
 
 ### Buscar os 3 jogos mais populares
